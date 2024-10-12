@@ -4,11 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Ever GitHub Repository</title>
-    <link rel="shortcut icon" href="./images/form.png" type="image/x-icon">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./images/form.png" type="image/x-icon" />
+    <!-- css link-->
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h2 class="title">My First Form</h2>
+    </header>
+    <main>
+      <img src="./images/sketch.jpg" alt="Form" class="contact-form" />
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    <footer>
+       <p class="subtitle">©2024 thesimtiaz, All right reserved</p> 
+    </footer>
   </body>
 </html>
